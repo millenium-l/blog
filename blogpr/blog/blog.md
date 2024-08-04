@@ -143,7 +143,7 @@ In urls.py, add paths to link the views:
 ## 6. Viewing in the Browser
 To view the details of a post, navigate to:
 
-        http://localhost:8000/detail/1/
+        http://localhost:5500/detail/1/
         
 
 
