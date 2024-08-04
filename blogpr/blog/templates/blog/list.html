@@ -1,0 +1,28 @@
+<!-- to view all our tasks from html --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: lists</title>
+</head>
+<body>
+    <h1>lists of tasks</h1>
+    <div>
+        <ol>
+            {% for task in tasks %}
+            <li>
+                <!-- initiate loop-->
+                <p>Title: <a href="{% url 'detail' task.id %}">{{task.title}}</p></a> 
+            </li>
+            {% endfor %}
+        </ol>
+        
+        
+    </div>
+</body>
+</html> 
+
+<!-- make sure to map it to the url -->
+
+

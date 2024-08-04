@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: detail view</title>
+</head>
+<body>
+   
+    <h1> Task item</h1>
+    <div>
+        <p>Title: {{ task.title }}</p>
+        <p>content: {{ task.content }}</p>
+        <p>author: {{ task.author }}</p>
+    </div>
+
+    <a href="{% url 'list' %}">Back to lists</a>
+</body>
+</html>
+
+<!-- make sure to map it to the url -->
