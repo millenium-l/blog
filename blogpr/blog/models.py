@@ -13,7 +13,7 @@ __str__ Method: Provides a string representation of the Task instance. Note: The
 """
 
 # Create your models here.
-class Task(models.Model):
+class Post(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
     author = models.CharField(max_length=50)

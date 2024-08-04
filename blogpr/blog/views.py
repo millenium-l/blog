@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
-from .models import Task
+from .models import Post
 
 # Create your views here.
 def hello(request):
@@ -14,11 +14,11 @@ def index(request):
     return render(request, 'blog/index.html', context)
 
 # listing elements in the list html tag
-def task_list(request):
-    tasks = Task.objects.all()
-    return render(request, 'blog/list.html', {'tasks':tasks})
+def post_list(request):
+    posts = Post.objects.all()
+    return render(request, 'blog/list.html', {'posts':posts})
 
 # providing details in the d
-def task_detail(request, id):
-    task = get_object_or_404(Task, id=id)
-    return render(request, 'blog/detail.html', {'task':task})
+def post_detail(request, id):
+    post = get_object_or_404(Post, id=id)
+    return render(request, 'blog/detail.html', {'post':post})

@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog: lists</title>
+    <title>Blog: posts</title>
 </head>
 <body>
-    <h1>lists of tasks</h1>
+    <h1>lists of post</h1>
     <div>
         <ol>
-            {% for task in tasks %}
+            {% for post in posts %}
             <li>
                 <!-- initiate loop-->
-                <p>Title: <a href="{% url 'detail' task.id %}">{{task.title}}</p></a> 
+                <p>Title: <a href="{% url 'detail' post.id %}">{{post.title}}</p></a> 
             </li>
             {% endfor %}
         </ol>
