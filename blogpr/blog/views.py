@@ -2,6 +2,8 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from .models import Post
 
+## views take in request and return a response
+
 # Create your views here.
 def hello(request):
     return HttpResponse('This is our basic todo app')
